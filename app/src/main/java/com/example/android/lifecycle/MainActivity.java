@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        //al comentar esta linea la aplicacion se detuvo y no inicializa
 
         logAndAppend(ON_START);
     }
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        // cuando quiero minimizar el app me sale el mensaje que la aplicacion se detuvo
 
         logAndAppend(ON_PAUSE);
     }
@@ -82,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
+        //al comentar esta linea no puedo restaurar la aplicacion despues de minimizarla
 
         logAndAppend(ON_RESTART);
     }
@@ -91,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        // cuando gire el celu en horizontal, me sale el mensaje que la app se detuvo
 
         logAndAppend(ON_DESTROY);
     }
@@ -100,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+        // despues de minimizar el app sale el mensaje que el app se detuvo, pero si puedo volver a entrar al app.
 
         logAndAppend(ON_STOP);
     }
